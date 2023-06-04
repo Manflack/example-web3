@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+}
+
+#app.isLoading .proposals_container{
+  display: none;
+}
+
+#app .tyd-loading-icon:after{
+  display: none;
+}
+#app.isLoading .tyd-loading-icon:after {
+  background-image: url("/think_dev.png");
+  content: " ";
+  display: block;
+  width: 54px;
+  height: 53px;
+  animation: rotating 1.2s linear infinite;
+   
+}
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
